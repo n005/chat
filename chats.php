@@ -16,8 +16,10 @@ fputs($chat, $h);
 fclose($chat);
 echo "<form id='test' action='co.php' method='post'>
 <input type='hidden' name='us' value='".$p."'/>
-<input type='hidden' name='mdp' value='".$j."'/>".$f."
-<input type='submit' value='Valider' />
-</form>";
+<input type='hidden' name='mdp' value='".$j."'/>
+</form>
+<script type='text/javascript'>
+  document.getElementById('test').submit();
+</script>";
 
 ?>
